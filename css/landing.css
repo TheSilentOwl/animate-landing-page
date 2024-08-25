@@ -26,9 +26,15 @@
   /* background-color: green; */
 }
 
+@media (max-width: 991px) {
+  .landing .container {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 767px) {
-  .landing .container::before {
-    height: calc(100vh - 40px);
+  .landing .container {
+    height: calc(100vh - 80px);
   }
 }
 
@@ -38,6 +44,7 @@
 
 @media (max-width: 991px) {
   .landing .container .text {
+    flex: 1;
     text-align: center;
   }
 }
